@@ -58,6 +58,7 @@ var Game = function () {
 
         tick ();
 
+        this.frames++;
         lastFrameTime = now;
         tickId = requestTick(internalTick);
     }.bind (this);
@@ -68,9 +69,12 @@ var Game = function () {
 
     var draw = function () {
         this.screen.clear ();
+
+        var code = [176, 177, 178, 219][Math.floor (this.frames / 8) % 4];
+
         for (var y = 0; y < 24; y++) {
             for (var x = 0; x < 80; x++) {
-                this.screen.write (String.fromCharCode(219), x, y, hsv(x / 80 * 360, y / 24 * 100, 100));
+                this.screen.write (String.fromCharCode(code), x, y, hsv(x / 80 * 360, y / 24 * 100, 100));
             }
         }
         this.screen.paint ();
