@@ -1,4 +1,4 @@
 cp437
 =====
 
-HTML5 renderer for IBMs code page 437.
+canvas font-renderer for your roguelikes.
