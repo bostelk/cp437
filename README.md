@@ -1,12 +1,12 @@
 cp437
 =====
 
-canvas font-renderer for your roguelikes.
+A canvas font-renderer for your roguelikes.
 
 Output
 ------
 The output from [main.html](https://static.bostelk.ca/games/cp437/main.html).
 
-An exmaple image:
+An example image:
 
-![Image of canvas](images/rainbow.png)
+<img src="images/rainbow.png" width="50%" alt="Image of canvas"/>
